@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <style>
+
+    /* General reset and font */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Top navigation bar */
+    nav {
+      background-color: #1a1a2e;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo { color: white; font-size: 1.4rem; font-weight: bold; }
+    nav a { color: #ccc; text-decoration: none; margin-left: 24px; }
+    nav a:hover { color: white; }
+
+    /* Hero section (big intro at the top) */
+    .hero {
+      background-color: #16213e;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 16px; }
+    .hero p { font-size: 1.2rem; color: #aaa; margin-bottom: 32px; }
+    .hero a {
+      background-color: #e94560;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero a:hover { background-color: #c73652; }
+
+    /* Section styling (About, Projects, Contact) */
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      border-bottom: 3px solid #e94560;
+      padding-bottom: 8px;
+    }
+
+    /* Project cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card h3 { margin-bottom: 10px; color: #1a1a2e; }
+    .card p { color: #666; font-size: 0.95rem; }
+    .card a {
+      display: inline-block;
+      margin-top: 14px;
+      color: #e94560;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Contact section */
+    .contact-links a {
+      display: inline-block;
+      margin-right: 16px;
+      margin-top: 12px;
+      color: #e94560;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .contact-links a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Your Name</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Hi, I'm Your Name 👋</h1>
+    <p>Student | Aspiring Developer | [Your Field/Interest]</p>
+    <a href="#projects">See My Work</a>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Write a few sentences about yourself here. Where do you go to school? 
+      What are you studying? What are you passionate about? What kind of work 
+      are you looking to do? Keep it friendly and personal.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Describe what this project does, what problem it solves, and what you learned from it.</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Describe what this project does, what problem it solves, and what you learned from it.</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Describe what this project does, what problem it solves, and what you learned from it.</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out — I'm always open to new opportunities and collaborations.</p>
+    <div class="contact-links">
+      <a href="mailto:youremail@gmail.com">📧 Email Me</a>
+      <a href="https://github.com/yourusername">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile">💼 LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Your Name. Built with HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>
